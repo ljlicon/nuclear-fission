@@ -1,0 +1,849 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #070707;
+  position: relative;
+}
+button {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/* .fastNeutron:hover{ */
+/* transform: translate(300px, 0); */
+/* left: 500px; */
+/* box-shadow: -10px 0px 6px 0px red; */
+/* } */
+.fastNeutron {
+  height: 10px;
+  width: 10px;
+  background-color: #fffb04;
+  border-radius: 50%;
+  box-shadow: -5px 0px 5px 0px #ee7605;
+  margin-left: 20px;
+  position: absolute;
+  top: 300px;
+  left: 0px;
+  animation-name: fast;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  /* animation-direction: alternate; */
+  animation-timing-function: cubic-bezier(0.84, 0.13, 0.95, 0.21);
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  /* transition-property: left;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.84, 0.13, 0.95, 0.21) */
+  /* transition-delay: 0s; */
+}
+@keyframes fast {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 500px;
+  }
+}
+@keyframes nucleus2 {
+  from {
+    top: 275px;
+    left: 460px;
+  }
+  to {
+    top: 50px;
+    left: 650px;
+  }
+}
+@keyframes nucleus3 {
+  from {
+    top: 295px;
+    left: 460px;
+  }
+  to {
+    top: 520px;
+    left: 650px;
+  }
+}
+@keyframes newNentron {
+  from {
+    top: 295px;
+    left: 460px;
+  }
+  to {
+    top: 200px;
+    left: 650px;
+  }
+}
+@keyframes newNentron1 {
+  from {
+    top: 295px;
+    left: 460px;
+  }
+  to {
+    top: 400px;
+    left: 650px;
+  }
+}
+.nucleus {
+  height: 50px;
+  width: 50px;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 3px #ee2502;
+  position: absolute;
+  top: 275px;
+  left: 450px;
+}
+.nucleus .proton {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+.nucleus .proton1 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.nucleus .proton2 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+.nucleus .proton3 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 28px;
+}
+.nucleus .neutron {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+.nucleus .neutron1 {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+.nucleus .neutron2 {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 25px;
+  top: 18px;
+}
+.nucleus .neutron3 {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 13px;
+  top: 28px;
+}
+.nucleus21 {
+  height: 50px;
+  width: 50px;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 3px #ee2502;
+  position: absolute;
+  top: 162px;
+  left: 651px;
+  display: none;
+}
+.nucleus21 .proton {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+.nucleus21 .proton1 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.nucleus21 .proton2 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+.nucleus21 .proton3 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 28px;
+}
+.nucleus21 .neutron {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+.nucleus21 .neutron1 {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+.nucleus21 .neutron2 {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 25px;
+  top: 18px;
+}
+.nucleus21 .neutron3 {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 13px;
+  top: 28px;
+}
+.nucleus22 {
+  height: 50px;
+  width: 50px;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 3px #ee2502;
+  position: absolute;
+  top: 390px;
+  left: 651px;
+  display: none;
+}
+.nucleus22 .proton {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+.nucleus22 .proton1 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.nucleus22 .proton2 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+.nucleus22 .proton3 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 28px;
+}
+.nucleus22 .neutron {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+.nucleus22 .neutron1 {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+.nucleus22 .neutron2 {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 25px;
+  top: 18px;
+}
+.nucleus22 .neutron3 {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 13px;
+  top: 28px;
+}
+@keyframes energy {
+  0% {
+    width: 0;
+    height: 0;
+    background-color: #fff;
+    box-shadow: 0 0 0 0 white;
+  }
+  50% {
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 40px 30px yellow;
+    background-color: yellow;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    box-shadow: 0 0 0 0 white;
+    background-color: #fff;
+  }
+}
+.energy {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  box-shadow: 0 0 5px 0px #ee7605;
+  border-radius: 50%;
+  left: 450px;
+  top: 300px;
+  animation: energy 2s cubic-bezier(0.77, 0.57, 0.36, 1.4) 1 forwards;
+  animation-play-state: paused;
+}
+.energy1 {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  box-shadow: 0 0 5px 0px #ee7605;
+  border-radius: 50%;
+  top: 182px;
+  left: 670px;
+  animation: energy 2s cubic-bezier(0.77, 0.57, 0.36, 1.4) 1 forwards;
+  animation-play-state: paused;
+}
+.energy2 {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  box-shadow: 0 0 5px 0px #ee7605;
+  border-radius: 50%;
+  top: 390px;
+  left: 670px;
+  animation: energy 2s cubic-bezier(0.77, 0.57, 0.36, 1.4) 1 forwards;
+  animation-play-state: paused;
+}
+.nucleus2 {
+  height: 30px;
+  width: 30px;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 3px #f3f707;
+  position: absolute;
+  top: 275px;
+  left: 460px;
+  animation: nucleus2 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards;
+  animation-play-state: paused;
+  display: none;
+}
+.nucleus2 .proton {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.nucleus2 .proton1 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  left: 4px;
+}
+.nucleus2 .neutron {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+.nucleus2 .neutron1 {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 3px;
+}
+.nucleus3 {
+  height: 30px;
+  width: 30px;
+  border: 2px solid #f6fa05;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 3px #f80505;
+  position: absolute;
+  top: 295px;
+  left: 460px;
+  animation: nucleus3 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards;
+  animation-play-state: paused;
+  display: none;
+}
+.nucleus3 .proton {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.nucleus3 .proton1 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  left: 4px;
+}
+.nucleus3 .neutron {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+.nucleus31 {
+  height: 30px;
+  width: 30px;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 3px #f3f707;
+  position: absolute;
+  top: 170px;
+  left: 660px;
+  animation: nucleus31 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards;
+  display: none;
+}
+.nucleus31 .proton {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.nucleus31 .proton1 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  left: 4px;
+}
+.nucleus31 .neutron {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+.nucleus31 .neutron1 {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 3px;
+}
+.nucleus32 {
+  height: 30px;
+  width: 30px;
+  border: 2px solid #f6fa05;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 3px #f80505;
+  position: absolute;
+  top: 170px;
+  left: 660px;
+  animation: nucleus32 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards;
+  display: none;
+}
+.nucleus32 .proton {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.nucleus32 .proton1 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  left: 4px;
+}
+.nucleus32 .neutron {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+.nucleus33 {
+  height: 30px;
+  width: 30px;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 3px #f3f707;
+  position: absolute;
+  top: 400px;
+  left: 660px;
+  animation: nucleus33 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards;
+  display: none;
+}
+.nucleus33 .proton {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.nucleus33 .proton1 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  left: 4px;
+}
+.nucleus33 .neutron {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+.nucleus33 .neutron1 {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 3px;
+}
+.nucleus34 {
+  height: 30px;
+  width: 30px;
+  border: 2px solid #f6fa05;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 3px #f80505;
+  position: absolute;
+  top: 400px;
+  left: 660px;
+  animation: nucleus34 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards;
+  display: none;
+}
+.nucleus34 .proton {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.nucleus34 .proton1 {
+  height: 10px;
+  width: 10px;
+  background-color: #1a30aa;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  left: 4px;
+}
+.nucleus34 .neutron {
+  height: 10px;
+  width: 10px;
+  background-color: #a9acbd;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+@keyframes nucleus31 {
+  from {
+    top: 170px;
+    left: 660px;
+  }
+  to {
+    top: 80px;
+    left: 860px;
+  }
+}
+@keyframes nucleus32 {
+  from {
+    top: 170px;
+    left: 660px;
+  }
+  to {
+    top: 500px;
+    left: 860px;
+  }
+}
+@keyframes nucleus33 {
+  from {
+    top: 400px;
+    left: 660px;
+  }
+  to {
+    top: 300px;
+    left: 860px;
+  }
+}
+@keyframes nucleus34 {
+  from {
+    top: 400px;
+    left: 660px;
+  }
+  to {
+    top: 180px;
+    left: 860px;
+  }
+}
+.newNentron {
+  height: 10px;
+  width: 10px;
+  background-color: #fffb04;
+  border-radius: 50%;
+  box-shadow: -4px 3px 5px 0px #ee7605;
+  position: absolute;
+  top: 295px;
+  left: 460px;
+  animation: newNentron 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards;
+  animation-play-state: paused;
+  display: none;
+}
+.newNentron1 {
+  height: 10px;
+  width: 10px;
+  background-color: #fffb04;
+  border-radius: 50%;
+  box-shadow: -4px -3px 5px 0px #ee7605;
+  position: absolute;
+  top: 295px;
+  left: 460px;
+  animation: newNentron1 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards;
+  animation-play-state: paused;
+  display: none;
+}
+.newNentron21 {
+  height: 10px;
+  width: 10px;
+  background-color: #fffb04;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 3px #ee7605;
+  position: absolute;
+  top: 185px;
+  left: 675px;
+  animation: newNentron21 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards;
+  display: none;
+}
+.newNentron22 {
+  height: 10px;
+  width: 10px;
+  background-color: #fffb04;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 3px #ee7605;
+  position: absolute;
+  top: 185px;
+  left: 675px;
+  animation: newNentron22 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards;
+  display: none;
+}
+.newNentron23 {
+  height: 10px;
+  width: 10px;
+  background-color: #fffb04;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 3px #ee7605;
+  position: absolute;
+  top: 185px;
+  left: 675px;
+  animation: newNentron23 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards;
+  display: none;
+}
+.newNentron24 {
+  height: 10px;
+  width: 10px;
+  background-color: #fffb04;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 3px #ee7605;
+  position: absolute;
+  top: 400px;
+  left: 675px;
+  animation: newNentron24 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards;
+  display: none;
+}
+.newNentron25 {
+  height: 10px;
+  width: 10px;
+  background-color: #fffb04;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 3px #ee7605;
+  position: absolute;
+  top: 400px;
+  left: 675px;
+  animation: newNentron25 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards;
+  display: none;
+}
+.newNentron26 {
+  height: 10px;
+  width: 10px;
+  background-color: #fffb04;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 3px #ee7605;
+  position: absolute;
+  top: 400px;
+  left: 675px;
+  animation: newNentron26 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards;
+  display: none;
+}
+@keyframes newNentron21 {
+  from {
+    top: 185px;
+    left: 675px;
+  }
+  to {
+    top: 233px;
+    left: 860px;
+  }
+}
+@keyframes newNentron22 {
+  from {
+    top: 185px;
+    left: 675px;
+  }
+  to {
+    top: 53px;
+    left: 860px;
+  }
+}
+@keyframes newNentron23 {
+  from {
+    top: 185px;
+    left: 675px;
+  }
+  to {
+    top: 433px;
+    left: 860px;
+  }
+}
+@keyframes newNentron24 {
+  from {
+    top: 400px;
+    left: 675px;
+  }
+  to {
+    top: 333px;
+    left: 860px;
+  }
+}
+@keyframes newNentron25 {
+  from {
+    top: 400px;
+    left: 675px;
+  }
+  to {
+    top: 133px;
+    left: 860px;
+  }
+}
+@keyframes newNentron26 {
+  from {
+    top: 400px;
+    left: 675px;
+  }
+  to {
+    top: 533px;
+    left: 860px;
+  }
+}

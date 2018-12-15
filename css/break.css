@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(7, 7, 7);
+    position: relative;
+}
+button{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.fastNeutron{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(255, 251, 4);
+    border-radius: 50%;
+    box-shadow: -5px 0px 5px 0px rgb(238, 37, 2);
+    margin-left: 20px;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    animation-name: fast;
+    animation-duration: 2s;
+    animation-iteration-count:1;
+    /* animation-direction: alternate; */
+    animation-timing-function: cubic-bezier(0.84, 0.13, 0.95, 0.21);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    
+    /* transition-property: left;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.84, 0.13, 0.95, 0.21) */
+    /* transition-delay: 0s; */
+}
+/* .fastNeutron:hover{ */
+    /* transform: translate(300px, 0); */
+    /* left: 500px; */
+    /* box-shadow: -10px 0px 6px 0px red; */
+/* } */
+
+@keyframes fast{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left:500px;
+    }
+}
+.nucleus{
+    height: 50px;
+    width: 50px;
+    border:2px solid yellow;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px rgb(238, 37, 2);
+    margin-left: 20px;
+    position: absolute;
+    top: 275px;
+    left: 450px;
+}
+

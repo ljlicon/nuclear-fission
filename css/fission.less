@@ -1,0 +1,911 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(7, 7, 7);
+    position: relative;
+}
+
+button {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/* .fastNeutron:hover{ */
+
+/* transform: translate(300px, 0); */
+
+/* left: 500px; */
+
+/* box-shadow: -10px 0px 6px 0px red; */
+
+/* } */
+
+.fastNeutron {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(255, 251, 4);
+    border-radius: 50%;
+    box-shadow: -5px 0px 5px 0px #ee7605;
+    margin-left: 20px;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    animation-name: fast;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    /* animation-direction: alternate; */
+    animation-timing-function: cubic-bezier(0.84, 0.13, 0.95, 0.21);
+    animation-fill-mode: forwards;
+    animation-play-state: paused; 
+    // 是否运行或暂停动画
+    // animation: name duration timing-function delay iteration-count  direction fill-mode;
+    // 1.keyframe 名称 2.完成动画所花费的时间 3.动画的速度曲线 4.延迟  5.播放的次数 infinite 6.动画是否交替 7.动画不播放时
+    /* transition-property: left;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.84, 0.13, 0.95, 0.21) */
+    /* transition-delay: 0s; */
+}
+
+@keyframes fast {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 500px;
+    }
+}
+
+@keyframes nucleus2 {
+    from {
+        top: 275px;
+        left: 460px;
+    }
+    to {
+        top: 50px;
+        left: 650px;
+    }
+}
+
+@keyframes nucleus3 {
+    from {
+        top: 295px;
+        left: 460px;
+    }
+    to {
+        top: 520px;
+        left: 650px;
+    }
+}
+
+@keyframes newNentron {
+    from {
+        top: 295px;
+        left: 460px;
+    }
+    to {
+        top: 200px;
+        left: 650px;
+    }
+}
+
+@keyframes newNentron1 {
+    from {
+        top: 295px;
+        left: 460px;
+    }
+    to {
+        top: 400px;
+        left: 650px;
+    }
+}
+
+// 首次靶核
+.nucleus {
+    height: 50px;
+    width: 50px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 3px rgb(238, 37, 2);
+    position: absolute;
+    top: 275px;
+    left: 450px;
+    .proton {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+    .proton1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+    .proton2 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 25px;
+        left: 20px;
+    }
+    .proton3 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 25px;
+        left: 28px;
+    }
+    .neutron {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+    .neutron1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+    .neutron2 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 25px;
+        top: 18px;
+    }
+    .neutron3 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 13px;
+        top: 28px;
+    }
+}
+
+// 二次靶核
+.nucleus21 {
+    height: 50px;
+    width: 50px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 3px rgb(238, 37, 2);
+    position: absolute;
+    top: 162px;
+    left: 651px;
+    display: none;
+    .proton {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+    .proton1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+    .proton2 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 25px;
+        left: 20px;
+    }
+    .proton3 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 25px;
+        left: 28px;
+    }
+    .neutron {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+    .neutron1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+    .neutron2 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 25px;
+        top: 18px;
+    }
+    .neutron3 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 13px;
+        top: 28px;
+    }
+}
+
+.nucleus22 {
+    height: 50px;
+    width: 50px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 3px rgb(238, 37, 2);
+    position: absolute;
+    top: 390px;
+    left: 651px;
+    display: none;
+    .proton {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+    .proton1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+    .proton2 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 25px;
+        left: 20px;
+    }
+    .proton3 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 25px;
+        left: 28px;
+    }
+    .neutron {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+    .neutron1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+    .neutron2 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 25px;
+        top: 18px;
+    }
+    .neutron3 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 13px;
+        top: 28px;
+    }
+}
+// 能量特效
+@keyframes energy {
+    0% {
+        width: 0;
+        height: 0;
+        background-color: #fff;
+        box-shadow: 0 0 0 0 white;
+    }
+    50% {
+        width: 20px;
+        height: 20px;
+        box-shadow: 0 0 40px 30px yellow;
+        background-color: yellow;
+    }
+    100% {
+        width: 0;
+        height: 0;
+        box-shadow: 0 0 0 0 white;
+        background-color: #fff;
+    }
+}
+.energy {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    box-shadow: 0 0 5px 0px #ee7605;
+    border-radius: 50%;
+    left: 450px;
+    top: 300px;
+    animation: energy 2s cubic-bezier(0.77, 0.57, 0.36, 1.4) 1 forwards;
+    animation-play-state: paused;
+}
+.energy1 {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    box-shadow: 0 0 5px 0px #ee7605;
+    border-radius: 50%;
+    top: 182px;
+    left: 670px;
+    animation: energy 2s cubic-bezier(0.77, 0.57, 0.36, 1.4) 1 forwards;
+    animation-play-state: paused;
+}
+.energy2 {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    box-shadow: 0 0 5px 0px #ee7605;
+    border-radius: 50%;
+    top: 390px;
+    left: 670px;
+    animation: energy 2s cubic-bezier(0.77, 0.57, 0.36, 1.4) 1 forwards;
+    animation-play-state: paused;
+}
+
+// 首次新元素1
+.nucleus2 {
+    height: 30px;
+    width: 30px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 3px rgb(243, 247, 7);
+    position: absolute;
+    top: 275px;
+    left: 460px;
+    animation: nucleus2 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards;
+    animation-play-state: paused;
+    display: none;
+    .proton {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    .proton1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 9px;
+        left: 4px;
+    }
+    .neutron {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+    .neutron1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 3px;
+    }
+}
+
+// 首次新元素2
+.nucleus3 {
+    height: 30px;
+    width: 30px;
+    border: 2px solid rgb(246, 250, 5);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 3px rgb(248, 5, 5);
+    position: absolute;
+    top: 295px;
+    left: 460px;
+    animation: nucleus3 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards;
+    animation-play-state: paused;
+    display: none;
+    .proton {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    .proton1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 9px;
+        left: 4px;
+    }
+    .neutron {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+}
+
+// 二次新元素1
+.nucleus31 {
+    height: 30px;
+    width: 30px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 3px rgb(243, 247, 7);
+    position: absolute;
+    top: 170px;
+    left: 660px;
+    animation: nucleus31 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards; // animation-play-state: paused; 
+    display: none;
+    .proton {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    .proton1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 9px;
+        left: 4px;
+    }
+    .neutron {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+    .neutron1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 3px;
+    }
+}
+
+// 二次新元素2
+.nucleus32 {
+    height: 30px;
+    width: 30px;
+    border: 2px solid rgb(246, 250, 5);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 3px rgb(248, 5, 5);
+    position: absolute;
+    top: 170px;
+    left: 660px;
+    animation: nucleus32 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards; // animation-play-state: paused; // display: none;
+    display: none;
+    .proton {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    .proton1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 9px;
+        left: 4px;
+    }
+    .neutron {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+}
+
+// 二次新元素3
+.nucleus33 {
+    height: 30px;
+    width: 30px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 3px rgb(243, 247, 7);
+    position: absolute;
+    top: 400px;
+    left: 660px;
+    animation: nucleus33 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards; // animation: nucleus2 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards;
+    // animation-play-state: paused;
+    display: none;
+    .proton {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    .proton1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 9px;
+        left: 4px;
+    }
+    .neutron {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+    .neutron1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 3px;
+    }
+}
+
+// 二次新元素4
+.nucleus34 {
+    height: 30px;
+    width: 30px;
+    border: 2px solid rgb(246, 250, 5);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 3px rgb(248, 5, 5);
+    position: absolute;
+    top: 400px;
+    left: 660px;
+    animation: nucleus34 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards;
+    display: none; // animation: nucleus3 2s cubic-bezier(0.26, 0.78, 0.47, 0.99) 1 forwards;
+    // animation-play-state: paused; // display: none;
+    .proton {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    .proton1 {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(26, 48, 170);
+        border-radius: 50%;
+        position: absolute;
+        top: 9px;
+        left: 4px;
+    }
+    .neutron {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(169, 172, 189);
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+}
+
+//二级新元素运动
+@keyframes nucleus31 {
+    from {
+        top: 170px;
+        left: 660px;
+    }
+    to {
+        top: 80px;
+        left: 860px;
+    }
+}
+
+@keyframes nucleus32 {
+    from {
+        top: 170px;
+        left: 660px;
+    }
+    to {
+        top: 500px;
+        left: 860px;
+    }
+}
+
+@keyframes nucleus33 {
+    from {
+        top: 400px;
+        left: 660px;
+    }
+    to {
+        top: 300px;
+        left: 860px;
+    }
+}
+
+@keyframes nucleus34 {
+    from {
+        top: 400px;
+        left: 660px;
+    }
+    to {
+        top: 180px;
+        left: 860px;
+    }
+}
+
+// 首次新中子
+.newNentron {
+    height: 10px;
+    width: 10px;
+    background-color: #fffb04;
+    border-radius: 50%;
+    box-shadow: -4px 3px 5px 0px #ee7605;
+    position: absolute;
+    top: 295px;
+    left: 460px; // animation: newNentron 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards;
+    animation: newNentron 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards;
+    animation-play-state: paused;
+    display: none;
+}
+
+// 首次新中子1
+.newNentron1 {
+    height: 10px;
+    width: 10px;
+    background-color: #fffb04;
+    border-radius: 50%;
+    box-shadow: -4px -3px 5px 0px #ee7605;
+    position: absolute;
+    top: 295px;
+    left: 460px;
+    animation: newNentron1 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards;
+    animation-play-state: paused;
+    display: none;
+}
+
+// 二次新中子
+.newNentron21 {
+    height: 10px;
+    width: 10px;
+    background-color: #fffb04;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 3px #ee7605;
+    position: absolute;
+    top: 185px;
+    left: 675px;
+    animation: newNentron21 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards; // animation-play-state: paused;
+    display: none;
+}
+
+.newNentron22 {
+    height: 10px;
+    width: 10px;
+    background-color: #fffb04;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 3px #ee7605;
+    position: absolute;
+    top: 185px;
+    left: 675px;
+    animation: newNentron22 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards; // animation-play-state: paused;
+    display: none;
+}
+
+.newNentron23 {
+    height: 10px;
+    width: 10px;
+    background-color: #fffb04;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 3px #ee7605;
+    position: absolute;
+    top: 185px;
+    left: 675px;
+    animation: newNentron23 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards; // animation-play-state: paused;
+    display: none;
+}
+
+.newNentron24 {
+    height: 10px;
+    width: 10px;
+    background-color: #fffb04;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 3px #ee7605;
+    position: absolute;
+    top: 400px;
+    left: 675px;
+    animation: newNentron24 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards; // animation-play-state: paused;
+    display: none;
+}
+
+.newNentron25 {
+    height: 10px;
+    width: 10px;
+    background-color: #fffb04;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 3px #ee7605;
+    position: absolute;
+    top: 400px;
+    left: 675px;
+    animation: newNentron25 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards; // animation-play-state: paused;
+    display: none;
+}
+
+.newNentron26 {
+    height: 10px;
+    width: 10px;
+    background-color: #fffb04;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 3px #ee7605;
+    position: absolute;
+    top: 400px;
+    left: 675px;
+    animation: newNentron26 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards; // animation: newNentron1 1s cubic-bezier(1, 0.14, 0.98, 0.13) 1 forwards;
+    // animation-play-state: paused;
+    display: none;
+}
+
+//二次中子运动
+@keyframes newNentron21 {
+    from {
+        top: 185px;
+        left: 675px;
+    }
+    to {
+        top: 233px;
+        left: 860px;
+    }
+}
+
+@keyframes newNentron22 {
+    from {
+        top: 185px;
+        left: 675px;
+    }
+    to {
+        top: 53px;
+        left: 860px;
+    }
+}
+
+@keyframes newNentron23 {
+    from {
+        top: 185px;
+        left: 675px;
+    }
+    to {
+        top: 433px;
+        left: 860px;
+    }
+}
+
+@keyframes newNentron24 {
+    from {
+        top: 400px;
+        left: 675px;
+    }
+    to {
+        top: 333px;
+        left: 860px;
+    }
+}
+
+@keyframes newNentron25 {
+    from {
+        top: 400px;
+        left: 675px;
+    }
+    to {
+        top: 133px;
+        left: 860px;
+    }
+}
+
+@keyframes newNentron26 {
+    from {
+        top: 400px;
+        left: 675px;
+    }
+    to {
+        top: 533px;
+        left: 860px;
+    }
+}
+
+
