@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+margin: 0;
+padding: 0;
+        }
+        .box {
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+    <script>
+        var box = document.querySelector(".box");
+        var ul = document.createElement("ul");
+        box.appendChild(ul);
+        ul.style.height = "50px"
+        ul.style.width = "50px"
+        ul.style.backgroundColor="blue"
+        ul.style.position="absolute"
+        ul.onclick=function(){
+            var dis=10;
+            var current=ul.offsetLeft;
+            console.log(current);
+            current=current+dis;
+            ul.style.left=current+"px";
+        }
+    </script>
+</body>
+
+</html>
